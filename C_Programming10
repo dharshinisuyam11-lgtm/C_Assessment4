@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+    int n = 71, sum = 0;
+start:
+    if (n <= 79)
+    {
+        sum = sum + n;
+        n = n + 2;
+        goto start;
+    }
+    printf("Sum = %d", sum);
+    return 0;
+}
