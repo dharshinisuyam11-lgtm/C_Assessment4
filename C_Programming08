@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+    int n = 10, t, o;
+start:
+    if (n <= 99)
+    {
+        t = n / 10;
+        o = n % 10;
+        if ((t + o == 6) && (n % 2 == 0))
+        printf("%d\n", n);
+        n++;
+        goto start;
+    }
+    return 0;
+}
